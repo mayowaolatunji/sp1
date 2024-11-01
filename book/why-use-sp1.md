@@ -6,7 +6,7 @@ Zero-knowledge proofs (ZKPs) are a powerful primitive that enable **verifiable c
 
 Historically, building ZKP systems has been extremely complicated, requiring large teams with specialized cryptography expertise and taking years to go to production. SP1 is a performant, general-purpose zkVM that solves this problem and creates a future where all blockchain infrastructure, including rollups, bridges, coprocessors, and more, utilize ZKPs **via maintainable software written in Rust**.
 
-SP1 is especially powerful in blockchain contexts which rely on verifiable computation. Example applications include:
+SP1 is especially powerful in blockchain contexts, which rely on verifiable computation. Example applications include:
 - [Rollups](https://ethereum.org/en/developers/docs/scaling/zk-rollups/): SP1 can be used in combination with existing node infrastructure like [Reth](https://github.com/paradigmxyz/reth) to build rollups with ZKP validity proofs or ZK fraud proofs.
 - [Coprocessors](https://crypto.mirror.xyz/BFqUfBNVZrqYau3Vz9WJ-BACw5FT3W30iUX3mPlKxtA): SP1 can be used to outsource onchain computation to offchain provers to enable use cases such as large-scale computation over historical state and onchain machine learning, dramatically reducing gas costs. 
 - [Light Clients](https://ethereum.org/en/developers/docs/nodes-and-clients/light-clients/): SP1 can be used to build light clients that can verify the state of other chains, facilitating interoperability between different blockchains without relying on any trusted third parties.
@@ -28,7 +28,7 @@ SP1 is used by protocols in production today:
 
 SP1 enables teams to use ZKPs in production with minimal overhead and fast timelines.
 
-**Maintainable:** With SP1, you can reuse existing Rust crates, like `revm`, `reth`, `tendermint-rs`, `serde` and more, to write your ZKP logic in maintainable, Rust code.
+**Maintainable:** With SP1, you can reuse existing Rust crates, like `revm`, `reth`, `tendermint-rs`, `serde`, and more, to write your ZKP logic in maintainable Rust code.
 
 **Go to market faster:** By reusing existing crates and expressing ZKP logic in regular code, SP1 significantly reduces audit surface area and complexity, enabling teams to go to market with ZKPs faster.
 
